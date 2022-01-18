@@ -54,9 +54,9 @@ result_m_ceil = math.ceil(result_division)
 # Вывести result_m_ceil в консоль.
 print(result_m_ceil)
 # Создать переменную result_int и result_division округлить до ближайшего целого через явное приведение.
-result_int = round(result_division)
+result_int = int(round(result_division))
 # Вывести result_int в консоль.
-print(result_int)
+print(result_int, type(result_int))
 # Создать переменную result_no_division_loss в которой вы разделите item_1 на item_2 без остатка.
 result_no_division_loss = item_1 // item_2
 # Вывести result_no_division_loss в консоль.
