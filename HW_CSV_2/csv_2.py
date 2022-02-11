@@ -6,7 +6,7 @@ import datetime
 # Вариант 2. Создать digits_2.csv файл с 1-м полем которое называется number, в котором будут 300 строк с числами от 10 до 310
 
 def create_digits(name, dig_list):
-    with open(name, 'w') as f:
+    with open(name, 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerows(dig_list)
 
@@ -119,7 +119,7 @@ for i in range(0, 1000):
     email_list.append([email])
     dict_list.append({"number": i, "name": rand_name, "email": email})
 
-create_digits("digits_2.csv", digits_list[10:351])
+create_digits("digits_2.csv", digits_list[10:311])
 create_names("names_2.csv", name_list[:400])
 create_emails("emails_2.csv", email_list[:400])
 create_nne("nne_2.csv", dict_list[:450])
